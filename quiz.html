@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz page</title>
+   <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/quizscript.js" defer></script>
+    <script src="JS/quizQSTN.js"></script>
+</head>
+<body>
+    <div class="lower" id="low">
+        <h1>Chose a Catagory</h1>
+       
+       <div> 
+        <button id="htmlbtn"onclick="qchage(0);quitzstart();startTime(10)">HTML</button>
+        <button id="cssbtn" onclick="qchage(1);quitzstart();startTime(10)">CSS</button>
+        <button id="jsbtn" onclick="qchage(2); quitzstart();startTime(10)">JS</button>
+        <button id="webbtn" onclick="qchage(3); quitzstart();starttime(10)">WEB</button>
+        </div>
+      </div>
+    
+<!--**************************************************************-->
+    <div class="quiz-box inactive">
+        <div class="top"><div><span id="timer">00</span> .Sec left</div> <div class="points">Score:<span id="score">00</span></div></div>
+        <div class="question">
+        <h2 id="qstn">Question</h2> 
+        <div><span id="qstn_count">0</span>/<span id="total_qtn">0</span></div>
+    </div>
+    <div class="options">
+        <!-- <div class="optlist">1</div>
+        <div class="optlist">2</div>
+        <div class="optlist">2</div>
+        <div class="optlist">4</div> -->
+    </div>
+    <div class="bottom">
+        <button class="nxt-q inactive" id="nxt">NEXT Question</button></div>
+    </div>
+    <!--*************************************************************-->
+    <div class="result-box inactive">
+    <div class="result-head"><h2 >Quiz Result</h2></div>
+    <div class="result">
+        <h3 id="name">bhabesh</h3>
+        <h3 class="total-time">Total Score : <span id="totalS"></span></h3>
+        <h3 class="totalq">Total Question : <span id="result-qsthcount"></span></h3>
+        <h3 class="correct">correct Answer : <span id="correct"></span></h3>
+        <h3 class="incorrect">Wrong Answer : <span id="wrong"></span></h3>
+        <h3 class="parsent">Your Parcentage : <span id="parcent"></span></h3>
+    </div>
+    <div class="result-footer"><button id="reset">Reset</button> <button id="home">Go to Home</button></div>
+    </div>
+    
+</body>
+</html>

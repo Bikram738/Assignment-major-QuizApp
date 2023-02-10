@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width:100%;
+    height: 100vh;
+    background:url(/img/fadedorangebackground.png)no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 550px;
+    background: #fff;
+    margin:  180px auto;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: 5px 5px 10px black;
+    
+}
+.upper{
+    display: flex;
+    align-items:center;
+    background: #fff;
+    height: 200px;
+    border-radius: 5px;
+}
+.left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rightd{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.upper h1{
+    color: rgb(255, 17, 0);
+}
+input{
+    
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+input:focus{
+    outline:solid 1px orangered ;
+}
+#submit{
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: orangered;
+    border-color: orangered;
+}
+.rightd p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.lower{
+    min-height: 250px;
+    width: 500px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    border-top: 1px solid gray;
+
+}
+.lower h1{
+    color: rgb(255, 17, 0);
+    text-shadow: 2px 2px 12px rgb(114, 114, 114);
+}
+.lower button{
+    
+    display: inline-block;
+    width:210px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(250, 30, 14) 0%, rgb(255, 94, 0) 50%, rgb(215, 4, 4) 100%);
+    color: #fff;
+
+}
+.lower div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0px;
+}
+
+/*quiz page css*/
+
+.quiz-box{
+    width: 550px;
+    height: 450px;
+    background: #fff;
+    margin:  180px auto;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+.quiz-box h2{
+    font-size: 24px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.question{
+    border: 1px solid orangered;
+    padding: 10px 10px 5px;
+    min-height :100px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.question>div{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: orangered;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -110px
+}
+.optlist{
+    font-size: 20px;
+    border: 2px solid orangered;
+    background-color: rgb(255, 205, 187);
+    margin: 15px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.optlist:hover{
+    background: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+.bottom{
+    display: flex ;
+    justify-content: center;
+}
+.nxt-q{
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: orangered;
+    border-color: orangered;
+}
+.nxt-q:hover{
+    background: orangered;
+    color: #fff;
+}
+
+.result-box{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    margin:  180px auto;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 10px 10px black;
+}
+.result-head{
+    background: orangered;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    padding: 35px;
+
+}
+.result{
+    text-align: center;
+    margin-top: 20px;
+}
+.result-footer{
+    position:absolute;
+    bottom: 30px;
+}
+.result-footer button{
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: orangered;
+    border-color: orangered;
+}
+.result-footer button:hover{
+    background: orangered;
+    color: #fff;
+}
+#total_qtn , #qstn_count{
+    font-size: 20px;
+    font-weight: bold;
+}
+.result-box #name{
+    color: orangered;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h3{
+    margin: 5px;
+}
+h3>span{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+   
+}
+.points{
+    font-size: 20px;
+    font-weight: bold;
+}
+.points span{
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+}
+.top div{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.top div #timer{
+    color: rgb(248, 0, 0);
+    font-size: 22px;
+}
+
+.inactive{
+    display: none;
+}
+.disable{
+    pointer-events: none;
+}
+
+.wrong{
+background-color: red;
+}
+.right{
+    background-color: rgb(2, 255, 2);
+    width: 100%;
+}
+@media screen and (max-width: 480px){
+.container{
+    height: 350px;
+    width: 90%;
+    margin-top: 10%;
+}
+.upper{
+    flex-direction: column;
+    height: 350px;
+    width: 100%;
+    
+}
+input{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.lower{
+    width: 90%;
+    margin-top: 10%;
+}
+.quiz-box{
+    width: 90%;
+    min-height: 500px;
+}
+.question>div{
+    width:40px;
+    height:40px;
+    position: absolute;
+}
+#total_qtn , #qstn_count{
+    font-size: 12px;
+}
+.top div{
+    font-size: 12px;
+}
+}
+    

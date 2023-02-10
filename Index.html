@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz HOME</title>
+   <link rel="stylesheet" href="CSS/Style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <div class="left">
+          <img
+            src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-symbols-questionnaire-icon-poll-sign-concept-social-communication-chatting-interview-discussion-talk-team-dialog-vector-illustration_735449-263.jpg?w=2000"
+            alt="quiz logo"
+            width="90%"
+          />
+        </div>
+        <div class="rightd">
+          <h1>Hellow user!</h1>
+          <p>Enter your name to continew the QUiZ.</p>
+          <br />
+          <div>
+            <input
+              type="text"
+              id="NameData"
+              placeholder="ENTER YOUR NAME"
+              required
+            />
+            <button id="submit">ENTER</button>
+          </div>
+          <p>You'll have 10sec For Each Question</p>
+          <p>And Each correct Ans You will Get 10 points</p>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      let inpt = document.getElementById("NameData");
+      let sbtn = document.getElementById("submit");
+
+      sbtn.addEventListener("click", openCata);
+      function openCata() {
+        if (inpt.value == "") {
+          alert("Please enter your Name to Continew");
+        } else {
+          console.log("ok");
+          localStorage.setItem("user", inpt.value);
+          window.location.href = "quiz.html";
+        }
+        inpt.value = "";
+      }
+
+      console.log("fine");
+    </script>
+  </body>
+</html>
